@@ -1,0 +1,21 @@
+.link2 {
+    @include df-column-center;
+    width: 153px;
+    height: 48px;
+    border: 2px solid $sacramento_state_green;
+    border-radius: 24px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    background: none;
+    color: $sacramento_state_green;
+    transition: 40ms ease all;
+}
+
+.link2:active {
+    transition: 40ms ease all;
+    background-color: $sacramento_state_green;
+    color: $white;
+}

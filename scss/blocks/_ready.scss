@@ -1,0 +1,106 @@
+.ready {
+    background-color: $light_coral;
+    padding: 76px 0;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 200px;
+        height: 144px;
+        bottom: 0;
+        left: 0;
+        background-image: url('../images/pink__shape.svg');
+        background-repeat: no-repeat
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: $sacramento_state_green;
+    }
+}
+
+@media(max-width:1150px) {
+    .ready {
+        background-color: $light_coral;
+        padding: 76px 0;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 200px;
+            height: 124px;
+            bottom: 0px;
+            left: 0;
+            background-image: url('../images/pink__shape.svg');
+            background-repeat: no-repeat
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &__title {
+            width: 336px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            color: $sacramento_state_green;
+        }
+    }
+}
+
+@media(max-width:1150px) {
+    .ready {
+        background-color: $light_coral;
+        padding: 83px 0;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 200px;
+            height: 124px;
+            bottom: 0px;
+            left: 0;
+            background-image: url('../images/pink__shape.svg');
+            background-repeat: no-repeat
+        }
+
+        &__container {
+            @include df-column-center;
+            gap: 24px;
+        }
+
+        &__title {
+            text-align: center;
+            width: 327px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            color: $sacramento_state_green;
+        }
+    }
+}
