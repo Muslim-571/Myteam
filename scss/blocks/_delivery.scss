@@ -1,0 +1,346 @@
+.delivery {
+    background-color: $deep_jungle_green;
+    padding: 140px 0;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 147px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        background-image: url('../images/quadro__shape.svg');
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        bottom: 0;
+        right: 0;
+        background-image: url('../images/third__shape.svg');
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        @include df-column-center;
+        gap: 92px;
+    }
+
+    &__title {
+        width: 932px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: $white;
+    }
+
+    span {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: $rapture_blue;
+    }
+
+    &__bottom-box {
+        @include df-row-between;
+        gap: 25px
+    }
+
+    &__mini-boxes {
+        @include df-column-center;
+        position: relative;
+
+        &::after {
+            z-index: 1;
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 67px;
+            height: 56px;
+            top: -36px;
+            left: 40%;
+            background-image: url('../images/blockquote.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__comments {
+        z-index: 2;
+        text-align: center;
+        width: 350px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 24px;
+    }
+
+    &__mini-titles {
+        text-align: center;
+        width: 350px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: $rapture_blue;
+        margin-bottom: 2px;
+    }
+
+    &__mini-text {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width:1110px) {
+    .delivery {
+        background-color: $deep_jungle_green;
+        padding: 140px 0;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 147px;
+            height: 100px;
+            top: 0;
+            left: 0;
+            background-image: url('../images/quadro__shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            bottom: 0;
+            right: 0;
+            background-image: url('../images/third__shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            @include df-column-center;
+            gap: 92px;
+        }
+
+        &__title {
+            width: 483px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: $white;
+        }
+
+        span {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: $rapture_blue;
+        }
+
+        &__bottom-box {
+            @include df-column-center;
+            gap: 104px
+        }
+
+        &__mini-boxes {
+            @include df-column-center;
+            position: relative;
+
+            &::after {
+                z-index: 1;
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 67px;
+                height: 56px;
+                top: -40px;
+                left: 45%;
+                background-image: url('../images/blockquote.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__comments {
+            z-index: 2;
+            text-align: center;
+            width: 573px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: $white;
+            margin-bottom: 16px;
+        }
+
+        &__mini-titles {
+            text-align: center;
+            width: 350px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: $rapture_blue;
+            margin-bottom: 2px;
+        }
+
+        &__mini-text {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        &__images {
+            width: 72px;
+            height: 72px;
+        }
+    }
+}
+
+@media(max-width:670px) {
+    .delivery {
+        background-color: $deep_jungle_green;
+        padding: 140px 0;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 147px;
+            height: 100px;
+            top: 0;
+            left: 0;
+            background-image: url('../images/quadro__shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            bottom: 0;
+            right: 0;
+            background-image: url('../images/third__shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            @include df-column-center;
+            gap: 92px;
+        }
+
+        &__title {
+            width: 327px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: $white;
+        }
+
+        span {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: $rapture_blue;
+        }
+
+        &__bottom-box {
+            @include df-column-center;
+            gap: 104px
+        }
+
+        &__mini-boxes {
+            @include df-column-center;
+            position: relative;
+
+            &::after {
+                z-index: 1;
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 67px;
+                height: 56px;
+                top: -40px;
+                left: 40%;
+                background-image: url('../images/blockquote.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__comments {
+            z-index: 2;
+            text-align: center;
+            width: 327px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: $white;
+            margin-bottom: 16px;
+        }
+
+        &__mini-titles {
+            text-align: center;
+            width: 350px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: $rapture_blue;
+            margin-bottom: 2px;
+        }
+
+        &__mini-text {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        &__images {
+            width: 72px;
+            height: 72px;
+        }
+    }
+}
