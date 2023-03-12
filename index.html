@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>Home-page</title>
 </head>
+
 <body>
-    <h1 class="visually-hidden">Simple-starter</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="shape-icon-1">
+
+        </symbol>
+    </svg>
+    <h1 class="visually-hidden">Home-page</h1>
     <header class="header">
         <div class="container header__container">
-
+            <div class="header__left-box">
+                <a href="#"><img class="header__logo-image" src="./images/logo__image.svg" alt="logo__image" width="160"
+                        height="40"></a>
+                <nav class="header__navbar">
+                    <ul class="header__list">
+                        <li class="header__lists"><a class="header__links active" href="#">Home</a></li>
+                        <li class="header__lists"><a class="header__links" href="#">About</a></li>
+                        <li class="header__lists"><a class="header__links" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="header__burger-menu">
+                <img class="header__on" src="./images/open__menu.svg" alt="burger__on" width="20" height="17">
+                <img class="header__off" src="./images/close__menu.svg" alt="burger__off" width="18" height="17">
+            </button>
+            <a class="header__link link" href="#">contact</a>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container hero__container">
+
+                <h2 class="hero__title">Find the best <span>talent</span></h2>
+                <p class="hero__text">Finding the right people and building high performing teams can be hard. Most
+                    companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
 
             </div>
         </section>
@@ -28,4 +54,5 @@
     </footer>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

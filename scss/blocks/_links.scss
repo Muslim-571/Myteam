@@ -1,0 +1,21 @@
+.link {
+    @include df-column-center;
+    width: 153px;
+    height: 48px;
+    border: 2px solid $white;
+    border-radius: 24px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: $didnight_green;
+    color: $white;
+    transition: 40ms ease all;
+}
+
+.link:active {
+    transition: 40ms ease all;
+    background-color: $white;
+    color: $dark_green;
+}
