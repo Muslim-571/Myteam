@@ -12,7 +12,22 @@
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="shape-icon-1">
-
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                <path fill="currentColor"
+                    d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.4c0 .7.6 1.3 1.3 1.3h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3 2-4.8 4.7-4.8l2.8.2V7h-2c-1.4 0-1.7.7-1.7 1.8V11H20l-.4 3.6h-3.1V24h6c.8 0 1.4-.6 1.4-1.3V1.3c0-.7-.6-1.3-1.3-1.3Z" />
+            </svg>
+        </symbol>
+        <symbol id="shape-icon-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                <path fill="currentColor"
+                    d="M12 0a12 12 0 0 0-4.4 23.2c0-1-.2-2.4 0-3.5l1.5-6s-.4-.7-.4-1.7c0-1.7 1-3 2.2-3 1 0 1.5.8 1.5 1.8s-.6 2.5-1 4c-.3 1.2.6 2.1 1.8 2.1 2.1 0 3.8-2.2 3.8-5.5 0-2.8-2.1-4.9-5-4.9a5.2 5.2 0 0 0-5.5 5.3c0 1 .4 2 1 2.7v.3l-.3 1.4c0 .2-.2.3-.4.2-1.5-.7-2.5-3-2.5-4.7 0-3.8 2.8-7.3 8-7.3 4.1 0 7.4 3 7.4 7 0 4.1-2.6 7.4-6.3 7.4-1.2 0-2.3-.6-2.7-1.3l-.8 2.8c-.2 1-1 2.4-1.5 3.2A12 12 0 1 0 12 0Z" />
+            </svg>
+        </symbol>
+        <symbol id="shape-icon-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none">
+                <path fill="currentColor"
+                    d="M24 2.6c-.9.3-1.8.6-2.8.7A5 5 0 0 0 23.3.6c-1 .6-2 1-3 1.2a5 5 0 0 0-8.5 4.5A14 14 0 0 1 1.7 1a5 5 0 0 0 1.5 6.6c-.8 0-1.6-.2-2.2-.6A5 5 0 0 0 5 12a5 5 0 0 1-2.3 0 5 5 0 0 0 4.6 3.5 9.9 9.9 0 0 1-7.3 2A14 14 0 0 0 21.5 5.1 10 10 0 0 0 24 2.6Z" />
+            </svg>
         </symbol>
     </svg>
     <h1 class="visually-hidden">Home-page</h1>
@@ -118,7 +133,35 @@
     </main>
     <footer class="footer">
         <div class="container footer__container">
-
+            <div class="footer__left-box">
+                <a href="#"><img class="footer__logo-img" src="./images/logo__image.svg" alt="logo__image" width="160"
+                        height="40">
+                </a>
+                <nav class="footer__navbar">
+                    <ul class="footer__list">
+                        <li class="footer__lists"><a class="footer__links active" href="#">Home</a></li>
+                        <li class="footer__lists"><a class="footer__links" href="#">About</a></li>
+                        <li class="footer__lists"><a class="footer__links" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__right-icons">
+                <a class="footer__svg-link" href="#">
+                    <svg class="icon">
+                        <use xlink:href="#shape-icon-1" />
+                    </svg>
+                </a>
+                <a class="footer__svg-link" href="#">
+                    <svg class="icon">
+                        <use xlink:href="#shape-icon-2" />
+                    </svg>
+                </a>
+                <a class="footer__svg-link" href="#">
+                    <svg class="icon">
+                        <use xlink:href="#shape-icon-3" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </footer>
     <script src="./js/script.js"></script>

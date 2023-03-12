@@ -1,0 +1,229 @@
+.footer {
+    background-color: $dark_green;
+
+    &__container {
+        @include df-row-between;
+    }
+
+    &__left-box {
+        @include df-row-center;
+        gap: 80px;
+    }
+
+    &__logo-img {
+        vertical-align: middle;
+        transition: 40ms ease all;
+
+        &:active {
+            opacity: 0.6;
+            transition: 40ms ease all;
+        }
+    }
+
+    &__list {
+        padding: 73px 0;
+        @include df-row-center;
+        gap: 40px;
+    }
+
+    &__links {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: $white;
+        transition: 40ms ease all;
+
+        &:active {
+            color: $light_coral;
+            transition: 40ms ease all;
+        }
+    }
+
+    &__right-icons {
+        @include df-row-center;
+        gap: 24px;
+    }
+
+    &__svg-link {
+        color: $white;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            color: $light_coral;
+        }
+    }
+
+    .active {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: $light_coral;
+        transition: 40ms ease all;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media(max-width:820px) {
+    .footer {
+        background-color: $dark_green;
+
+        &__container {
+            @include df-row-between;
+            padding: 0 39px;
+        }
+
+        &__left-box {
+            @include df-row-center;
+            gap: 48px;
+        }
+
+        &__logo-img {
+            vertical-align: middle;
+            transition: 40ms ease all;
+
+            &:active {
+                opacity: 0.6;
+                transition: 40ms ease all;
+            }
+        }
+
+        &__list {
+            padding: 64px 0;
+            @include df-row-center;
+            gap: 40px;
+        }
+
+        &__links {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+            transition: 40ms ease all;
+
+            &:active {
+                color: $light_coral;
+                transition: 40ms ease all;
+            }
+        }
+
+        &__right-icons {
+            @include df-row-center;
+            gap: 24px;
+        }
+
+        &__svg-link {
+            color: $white;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                color: $light_coral;
+            }
+        }
+
+        .active {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: $light_coral;
+            transition: 40ms ease all;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media(max-width:740px) {
+    .footer {
+        background-color: $dark_green;
+
+        &__container {
+            @include df-column-center;
+            padding: 0 0px;
+        }
+
+        &__left-box {
+            @include df-column-center;
+            gap: 0px;
+        }
+
+        &__logo-img {
+            margin-top: 100px;
+            vertical-align: middle;
+            transition: 40ms ease all;
+
+            &:active {
+                opacity: 0.6;
+                transition: 40ms ease all;
+            }
+        }
+
+        &__list {
+            padding: 64px 0;
+            @include df-column-center;
+            gap: 40px;
+        }
+
+        &__links {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+            transition: 40ms ease all;
+
+            &:active {
+                color: $light_coral;
+                transition: 40ms ease all;
+            }
+        }
+
+        &__right-icons {
+            @include df-row-center;
+            gap: 24px;
+            margin-bottom: 100px;
+        }
+
+        &__svg-link {
+            color: $white;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                color: $light_coral;
+            }
+        }
+
+        .active {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: $light_coral;
+            transition: 40ms ease all;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
