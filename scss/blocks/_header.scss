@@ -1,6 +1,4 @@
 .header {
-    background-color: $didnight_green;
-
     &__container {
         @include df-row-between;
     }
@@ -61,8 +59,6 @@
 
 @media(max-width:820px) {
     .header {
-        background-color: $didnight_green;
-
         &__container {
             @include df-row-between;
             padding: 0 39px;
@@ -125,12 +121,12 @@
 
 @media(max-width:740px) {
     .header {
-        position: relative;
         z-index: 1001;
-        top: 0;
         width: 100%;
         position: fixed;
-        backdrop-filter: blur(20px);
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(5px);
         transition: .6s ease;
 
         &__container {
@@ -204,7 +200,7 @@
         &__off {
             display: none;
             position: absolute;
-            top: 60px;
+            top: 50px;
             left: 24px;
             z-index: 2;
         }
@@ -228,7 +224,7 @@
         }
 
         &__off {
-            display: block; 
+            display: block;
         }
 
         &__navbar {

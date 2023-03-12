@@ -1,0 +1,256 @@
+.build {
+    background-color: $sacramento_state_green;
+    padding: 180px 0;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 244px;
+        background-image: url('../images/grey__shape.svg');
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        @include df-row-between-start;
+    }
+
+    &__left-title {
+        position: relative;
+        width: 445px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: $white;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 50px;
+            height: 4px;
+            top: -54px;
+            left: 0;
+            background-image: url('../images/red__rectangle.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__right-box {
+        width: 100%;
+        max-width: 540px;
+        @include df-column-center;
+        gap: 32px;
+    }
+
+    &__mini-box {
+        @include df-row-between-start;
+        gap: 23px;
+    }
+
+    &__mini-titles-box {
+        @include df-column-starts;
+        gap: 16px;
+    }
+
+    &__mini-titles {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: $light_coral;
+    }
+
+    &__texts {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: $white;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width:1120px) {
+    .build {
+        background-color: $sacramento_state_green;
+        padding: 160px 28px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 244px;
+            background-image: url('../images/grey__shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            @include df-column-starts;
+            gap: 64px;
+        }
+
+        &__left-title {
+            position: relative;
+            width: 445px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            color: $white;
+
+            &::after {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 50px;
+                height: 4px;
+                top: -54px;
+                left: 0;
+                background-image: url('../images/red__rectangle.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__right-box {
+            width: 100%;
+            max-width: 573px;
+            @include df-column-center;
+            gap: 32px;
+        }
+
+        &__mini-box {
+            @include df-row-between-start;
+            gap: 23px;
+        }
+
+        &__mini-titles-box {
+            @include df-column-starts;
+            gap: 16px;
+        }
+
+        &__mini-titles {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            color: $light_coral;
+        }
+
+        &__texts {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            color: $white;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
+
+@media (max-width:670px) {
+    .build {
+        background-color: $sacramento_state_green;
+        padding: 120px 0px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 244px;
+            background-image: url('../images/grey__shape.svg');
+            background-repeat: no-repeat;
+        }
+
+        &__container {
+            @include df-column-starts;
+            gap: 64px;
+        }
+
+        &__left-title {
+            margin-left: -40px;
+            position: relative;
+            width: 240px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            color: $white;
+
+            &::after {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 50px;
+                height: 4px;
+                top: -54px;
+                left: 0;
+                background-image: url('../images/red__rectangle.svg');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__right-box {
+            width: 100%;
+            max-width: 573px;
+            @include df-column-center;
+            gap: 50px;
+        }
+
+        &__mini-box {
+            @include df-column-center;
+            gap: 0px;
+        }
+
+        &__mini-titles-box {
+            @include df-column-center;
+            gap: 8px;
+        }
+
+        &__mini-titles {
+            width: 327px;
+            text-align: center;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            color: $light_coral;
+        }
+
+        &__texts {
+            width: 327px;
+            text-align: center;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            color: $white;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
